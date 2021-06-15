@@ -909,7 +909,7 @@ class Laravel extends Framework implements ActiveRecord, PartedModule
      * @throws RuntimeException
      * @part orm
      */
-    public function haveRecord($table, $attributes = [])
+    public function haveRecord(string $table, array $attributes = [])
     {
         if (class_exists($table)) {
             $model = new $table;
